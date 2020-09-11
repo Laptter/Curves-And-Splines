@@ -32,4 +32,8 @@ public class BezierSpline : MonoBehaviour
         point.x += 1f;
         points[points.Length - 1] = point;
     }
+
+    public int CurveCount {
+        get { return (points.Length - 1) / 3; }
+    }
 }
